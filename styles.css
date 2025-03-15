@@ -47,8 +47,8 @@ body {
   animation: heartbeat 1s infinite;
   margin-bottom: 50px; /* Reduzindo a margem */
   position: absolute;
-  top: 22%;
-  left: 44%;
+  top: 21%;
+  left: 46%;
   transform: translate(-50%, -100%);
 }
 
