@@ -46,7 +46,7 @@ body {
   transform: rotate(-45deg);
   animation: heartbeat 1s infinite;
   margin-bottom: 50px; /* Reduzindo a margem */
-  margin-left: 215px;
+  margin-left: 170px;
 }
 
 .heart:before,
@@ -110,7 +110,7 @@ button {
   border-radius: 4px; /* Reduzindo o border-radius */
   cursor: pointer;
   margin-top: 20px; /* Reduzindo a margem */
-  margin-left: 215px;
+  margin-left: 170px;
 }
 
 button:hover {
