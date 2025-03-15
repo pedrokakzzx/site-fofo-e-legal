@@ -10,17 +10,17 @@ body {
   font-family: Arial, sans-serif;
   color: #fff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
-  flex-direction: column; /*Mudando para coluna para mobile*/
 }
 
 /* Classes de utilidade */
 .margin-p {
-  margin: 20px;
-  padding: 20px;
+  margin: 10px; /* Reduzindo a margem */
+  padding: 10px; /* Reduzindo o padding */
 }
 
 .flex {
@@ -30,7 +30,7 @@ body {
 }
 
 .max-width {
-  max-width: 300px;
+  max-width: 250px; /* Reduzindo o max-width */
 }
 
 .transition {
@@ -39,14 +39,14 @@ body {
 
 /* Estilo do coração */
 .heart {
-  width: 150px; /* Reduzindo o tamanho do coração */
-  height: 150px; /* Reduzindo o tamanho do coração */
+  width: 120px; /* Reduzindo o tamanho do coração */
+  height: 120px; /* Reduzindo o tamanho do coração */
   position: relative;
   background-color: red;
   transform: rotate(-45deg);
   animation: heartbeat 1s infinite;
-  margin-bottom: 20px; /* Ajustando a margem */
-  margin-left: 0px; /*Removendo margem fixa*/
+  margin-bottom: 50px; /* Reduzindo a margem */
+  margin-left: 215px;
 }
 
 .heart:before,
@@ -54,17 +54,17 @@ body {
   content: "";
   background-color: red;
   border-radius: 50%;
-  height: 150px; /* Reduzindo o tamanho do coração */
+  height: 120px; /* Reduzindo o tamanho do coração */
   position: absolute;
-  width: 150px; /* Reduzindo o tamanho do coração */
+  width: 120px; /* Reduzindo o tamanho do coração */
 }
 
 .heart:before {
-  top: -75px; /* Ajustando a posição */
+  top: -60px; /* Ajustando a posição */
 }
 
 .heart:after {
-  left: 75px; /* Ajustando a posição */
+  left: 60px; /* Ajustando a posição */
 }
 
 /* Animação de pulsação */
@@ -82,79 +82,39 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-grow: 1;
-  flex-shrink: 0;
-  width: 90%; /*Usando porcentagem*/
+  width: 90%;
 }
 
 .poem {
-  font-size: 16px; /* Reduzindo a fonte */
+  font-size: 14px; /* Reduzindo a fonte */
   color: #fff;
-  text-align: center; /* Centralizando o texto */
-  line-height: 1.5;
-  margin-left: 0px; /*Removendo margem fixa*/
-  margin-top: 20px; /*Ajustando margem*/
+  text-align: center;
+  line-height: 1.4; /* Reduzindo o line-height */
+  margin-top: 15px; /* Reduzindo a margem */
 }
 
 .poem subtitle {
-  font-size: 20px; /* Reduzindo a fonte */
+  font-size: 18px; /* Reduzindo a fonte */
   font-weight: bold;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 8px; /* Reduzindo a margem */
+  margin-top: 8px; /* Reduzindo a margem */
 }
 
 /* Estilo do botão */
 button {
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 8px 16px; /* Reduzindo o padding */
+  font-size: 14px; /* Reduzindo a fonte */
   background-color: #f44336;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px; /* Reduzindo o border-radius */
   cursor: pointer;
-  margin-left: 0px; /*Removendo margem fixa*/
-  margin-top: 20px;
+  margin-top: 20px; /* Reduzindo a margem */
+  margin-left: 215px;
 }
 
 button:hover {
   background-color: #d32f2f;
 }
 
-/* Media Query para telas maiores (desktop) */
-@media (min-width: 768px) {
-  body{
-    flex-direction: row;
-  }
-  .heart {
-    width: 200px;
-    height: 200px;
-    margin-bottom: -250px;
-    margin-left: 170px;
-  }
-
-  .heart:before,
-  .heart:after {
-    height: 200px;
-    width: 200px;
-  }
-
-  .heart:before {
-    top: -100px;
-  }
-
-  .heart:after {
-    left: 100px;
-  }
-  .poem{
-    text-align: left;
-    margin-left: 600px;
-    margin-top: -150px;
-  }
-  button{
-    margin-left: 700px;
-    margin-top: 20px;
-  }
-  .poem-button-container{
-    width: auto;
-  }
-}
+/* Removendo a media query */
