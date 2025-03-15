@@ -48,7 +48,7 @@ body {
   margin-bottom: 50px; /* Reduzindo a margem */
   position: absolute;
   top: 22%;
-  left: 47%;
+  left: 45%;
   transform: translate(-50%, -100%);
 }
 
@@ -114,7 +114,7 @@ button {
   cursor: pointer;
   margin-top: 20px; /* Reduzindo a margem */
   position: absolute;
-  left: 50%;
+  left: 49%;
   transform: translate(-50%, -50%);
 }
 
