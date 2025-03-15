@@ -46,7 +46,10 @@ body {
   transform: rotate(-45deg);
   animation: heartbeat 1s infinite;
   margin-bottom: 50px; /* Reduzindo a margem */
-  margin-left: 170px;
+  position: absolute;
+  top: 22%;
+  left: 47%;
+  transform: translate(-50%, -100%);
 }
 
 .heart:before,
@@ -88,7 +91,7 @@ body {
 .poem {
   font-size: 14px; /* Reduzindo a fonte */
   color: #fff;
-  text-align: center;
+  text-align: center; 
   line-height: 1.4; /* Reduzindo o line-height */
   margin-top: 15px; /* Reduzindo a margem */
 }
@@ -110,7 +113,9 @@ button {
   border-radius: 4px; /* Reduzindo o border-radius */
   cursor: pointer;
   margin-top: 20px; /* Reduzindo a margem */
-  margin-left: 170px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 button:hover {
